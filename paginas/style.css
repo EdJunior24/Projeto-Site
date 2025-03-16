@@ -1,0 +1,96 @@
+:root {
+    font-size: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    background-image: url('https://external-preview.redd.it/anime-girl-wallpaper-4k-best-purple-wallpaper-v0-c2R4ZzMxejg0dXZjMTkzlWbfz3ccF2si-SnE3tJvXXr2koBsiq70Ns-foAoP.png?width=640&crop=smart&format=pjpg&auto=webp&s=8253d46ca2208c69569055ebaf87f660d1e54561');
+    background-color: black;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100dvh;
+}
+
+body {
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 470px;
+    height: 290px;
+    box-shadow: 0 0 5px blueviolet;
+}
+
+.title {
+    color: blueviolet;
+    margin-bottom: 20px;
+}
+
+form input {
+    outline: none;
+    padding: 7px 10px;
+    border-radius: 50px;
+    border: 1px solid blueviolet;
+    background-color: transparent;
+    transition: all 0.3s;
+    margin-bottom: 5px;
+}
+
+form input:focus {
+  border: 1px solid lime;
+}
+
+form div {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+}
+
+form div .botao-lindo {
+    padding: 10px 20px;
+    background-color: blueviolet;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+form div .botao-lindo:hover {
+    background: rgb(90, 20, 155);
+}
+
+span {
+    padding: 1px;
+    background-color: gray;
+    width: 100%;
+    margin: 20px 0;
+}
+
+@media (max-width: 768px) {
+    form {
+        width: 90%;
+    }
+}
