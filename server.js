@@ -1,20 +1,17 @@
 const express = require('express');
-
+const port = process.env.PORT || 8080;
+const host = process.env.HOST || '0.0.0.0';
 const app = express();
 
 app.use(express.json());
 app.use(express.static('paginas'));
 
-const port = process.env.PORT || 8080;
+const publicRoutes = require('./routes/public');
+const privateRoutes = require('./routes/private');
 
-app.get('/', (req, res) => {
-    try {
-      res.status(200).json({ status: true, resposta: "Seja bem-vindo"});
-    } catch (e) {
-      console.log(e);
-    }
-});
+app.use('/', publicRoutes);
+app.use('/', privateRoutes);
 
-app.listen(port, () => {
-    console.log(`Servidor iniciado! ${port}`);
+app.listen(port, host, () => {
+    console.log(`Servidor iniciado!`);
 });
