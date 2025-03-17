@@ -8,10 +8,11 @@
     box-sizing: border-box;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
 }
 
 html {
-    background-image: url('https://external-preview.redd.it/anime-girl-wallpaper-4k-best-purple-wallpaper-v0-c2R4ZzMxejg0dXZjMTkzlWbfz3ccF2si-SnE3tJvXXr2koBsiq70Ns-foAoP.png?width=640&crop=smart&format=pjpg&auto=webp&s=8253d46ca2208c69569055ebaf87f660d1e54561');
+    background-image: url('./imagens/anime-girl-login.webp');
     background-color: black;
 
     background-repeat: no-repeat;
